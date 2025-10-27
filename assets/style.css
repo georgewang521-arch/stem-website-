@@ -1,0 +1,74 @@
+:root {
+  --bg: #0a0a0f;
+  --primary: #00bfff;
+  --text: #e6e6e6;
+  --card-bg: #141420;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+header {
+  background-color: #0e0e18;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 2px solid var(--primary);
+}
+
+nav a {
+  color: var(--primary);
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+button {
+  background-color: var(--primary);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0095cc;
+}
+
+.learn-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid #1f1f2e;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.card:hover {
+  border-color: var(--primary);
+  transform: translateY(-5px);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #0e0e18;
+  color: var(--primary);
+  border-top: 1px solid #1a1a2b;
+}
